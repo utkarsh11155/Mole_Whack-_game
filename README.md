@@ -31,7 +31,7 @@ The Mole Popup Game is a fun and interactive web-based game where your goal is t
 
 ## Demo
 
-You can play the game online by visiting the [Mole Popup Game Demo](#) ([insert demo link](https://utkarsh11155.github.io/Mole_Whack-_game/)).
+You can play the game online by visiting the [Mole Popup Game Demo](https://utkarsh11155.github.io/Mole_Whack-_game/).
 
 ## Getting Started
 
