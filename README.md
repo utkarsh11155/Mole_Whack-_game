@@ -1,4 +1,4 @@
-# Mole_Whack-_game
+# Mole_Whack_game
 mole whack is a game which is played by hitting poping up whacks from the holes...
 
 ![Game Preview] ![screenshot1](https://github.com/utkarsh11155/Mole_Whack-_game/assets/73416360/b8911a84-43e2-401c-b845-284938759d2a)
