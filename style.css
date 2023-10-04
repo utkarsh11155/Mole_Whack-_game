@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: goldenrod;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.container {
+     /* Replace 'background.png' with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Optional: Keeps the background fixed when scrolling */
+    /* Rest of your container styles */
+    background-color: darkgoldenrod; /* Add a semi-transparent white overlay to make text more readable */
+    border-radius: 5px;
+    box-shadow: 30px 30px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hole {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 100px; /* Set the width of each grid element */
+    height: 100px; /* Set the height of each grid element */
+}
+
+.hole img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.1s;
+}
+
+.hole.active img {
+    transform: scale(1.2); /* Increase size on click (adjust as needed) */
+}
+
+p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

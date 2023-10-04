@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mole Whack Game</title>
+</head>
+<body >
+    <h1>Mole Whack Game</h1>
+    <p>High Score: <span id="highScore">0</span></p>
+
+    <audio id="gameAudio">
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <p>Score: <span id="score">0</span></p>
+    <p>Time: <span id="timerDisplay">60</span> seconds</p>
+    <button id="startButton">Start Game</button>
+    <button id="resetButton">Reset Game</button>
+    <br>
+    <div class="container">
+        <div class="grid">
+            <button class="hole" data-key="7"><img src="whackhole.png" alt="Empty Hole"></button>
+            <button class="hole" data-key="8"><img src="whackhole.png" alt="Empty Hole"></button>
+            <button class="hole" data-key="9"><img src="whackhole.png" alt="Empty Hole"></button>
+            <button class="hole" data-key="4"><img src="whackhole.png" alt="Empty Hole"></button>
+            <button class="hole" data-key="5"><img src="whackhole.png" alt="Empty Hole"></button>
+            <button class="hole" data-key="6"><img src="whackhole.png" alt="Empty Hole"></button>
+            <button class="hole" data-key="1"><img src="whackhole.png" alt="Empty Hole"></button>
+            <button class="hole" data-key="2"><img src="whackhole.png" alt="Empty Hole"></button>
+            <button class="hole" data-key="3"><img src="whackhole.png" alt="Empty Hole"></button>
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
