@@ -122,7 +122,7 @@ function startGame() {
         } else {
             moveMole();
         }
-    }, 100);
+    }, 1000);
 }
 holes.forEach(hole => {
     hole.addEventListener('mousedown', () => {
