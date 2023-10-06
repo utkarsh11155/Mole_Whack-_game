@@ -40,11 +40,11 @@ function startGame() {
         } else if (gameTime <= 30) {
             moveMole();
             clearInterval(gameInterval); // Clear the current interval
-            gameInterval = setInterval(moveMole, 250); // Set a new interval with 0.5 seconds
+            gameInterval = setInterval(moveMole, 50); // Set a new interval with 0.5 seconds
         } else {
             moveMole();
         }
-    }, 500);
+    }, 100);
 }
 
 
