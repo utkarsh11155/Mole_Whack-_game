@@ -35,7 +35,7 @@ function startGame() {
     gameInterval = setInterval(() => {
         gameTime--;
         updateTimer();
-       if (gameTime <= -1) {
+       if (gameTime <= 0) {
             endGame();
         } else {
             moveMole();
@@ -70,7 +70,7 @@ function updateScore() {
 }
 
 function updateTimer() {
-    timerDisplay.textContent = gameTime+1;
+    timerDisplay.textContent = gameTime;
 }
 
 function hideMole() {
@@ -117,7 +117,7 @@ function startGame() {
     gameInterval = setInterval(() => {
         gameTime--;
         updateTimer();
-         if (gameTime <= -1) {
+         if (gameTime <= 0) {
             endGame();
         } else {
             moveMole();
