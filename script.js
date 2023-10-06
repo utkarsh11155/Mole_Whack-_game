@@ -28,24 +28,7 @@ holes.forEach(hole => {
     });
 });
 
-function startGame() {
-    resetGame();
-    startButton.disabled = true;
-    updateTimer();
-    gameInterval = setInterval(() => {
-        gameTime--;
-        updateTimer();
-        if (gameTime <= 0) {
-            endGame();
-        } else if (gameTime <= 30) {
-            moveMole();
-            clearInterval(gameInterval); // Clear the current interval
-            gameInterval = setInterval(moveMole, 50); // Set a new interval with 0.5 seconds
-        } else {
-            moveMole();
-        }
-    }, 100);
-}
+
 
 
 function resetGame() {
@@ -126,7 +109,7 @@ function startGame() {
         } else {
             moveMole();
         }
-    }, 1000);
+    }, 100);
 }
 holes.forEach(hole => {
     hole.addEventListener('mousedown', () => {
