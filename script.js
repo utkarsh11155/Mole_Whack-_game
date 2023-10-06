@@ -28,7 +28,20 @@ holes.forEach(hole => {
     });
 });
 
-
+function startGame() {
+    resetGame();
+    startButton.disabled = true;
+    updateTimer();
+    gameInterval = setInterval(() => {
+        gameTime--;
+        updateTimer();
+        if (gameTime <= 0) {
+            endGame();
+        } else {
+            moveMole();
+        }
+    }, 1000);
+}
 
 
 function resetGame() {
