@@ -35,8 +35,12 @@ function startGame() {
     gameInterval = setInterval(() => {
         gameTime--;
         updateTimer();
-        if (gameTime <= 0) {
+       if (gameTime <= 0) {
             endGame();
+        } else if (gameTime <= 30) {
+            moveMole();
+            clearInterval(gameInterval); // Clear the current interval
+            gameInterval = setInterval(moveMole, 500); // Set a new interval with 0.5 seconds
         } else {
             moveMole();
         }
@@ -119,6 +123,10 @@ function startGame() {
         updateTimer();
         if (gameTime <= 0) {
             endGame();
+        } else if (gameTime <= 30) {
+            moveMole();
+            clearInterval(gameInterval); // Clear the current interval
+            gameInterval = setInterval(moveMole, 500); // Set a new interval with 0.5 seconds
         } else {
             moveMole();
         }
