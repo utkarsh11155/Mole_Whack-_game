@@ -70,7 +70,7 @@ function updateScore() {
 }
 
 function updateTimer() {
-    timerDisplay.textContent = gameTime;
+    timerDisplay.textContent = gameTime+1;
 }
 
 function hideMole() {
